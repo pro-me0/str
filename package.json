@@ -1,15 +1,25 @@
 {
   "name": "string",
   "version": "1.0.0",
-  "description": "",
-  "main": "actual.js",
+  "main": "str.js",
   "scripts": {
+    "start": "node str.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "mazi",
   "license": "ISC",
   "dependencies": {
     "colors": "^1.4.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pro-me0/str.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pro-me0/str/issues"
+  },
+  "homepage": "https://github.com/pro-me0/str#readme",
+  "description": ""
 }

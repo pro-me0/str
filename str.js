@@ -1,3 +1,6 @@
+console.clear();
+
+
 str = `This code logs each character of
 the given Strings in .02 seconds
 
@@ -37,6 +40,11 @@ function print(x) {
 		setTimeout(()=>{
 			print(x);
 		},20);
+	}else{
+	  console.log("\n\n\n\nexit in t-5 sec.".random)
+	  setTimeout(()=>{
+	    process.exit()
+		},5000);
 	}
 }
 console.log(`>There are ${read.length} Characters in this piece of code (Inclusing WhiteSpace Chrs)\n\n`);
