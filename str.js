@@ -13,9 +13,9 @@ const read = fs.readFileSync('./str.js', 'utf-8')
 	process.stdout.write(str[x])
  }
  */
- /*
+/*
 for (let x = 0; x<str.length;x++){
-	setTimeout(()=>{process.stdout.write(str[x])}, 1000)
+   setTimeout(()=>{process.stdout.write(str[x])}, 1000)
 }console.log() */
 var x, i;
 //jkh
@@ -24,27 +24,30 @@ x = 0;
 let title = () => {
 	setTimeout(() => {
 		process.title += "  \\";
-		
-		setTimeout(() => {process.title += "  /";
-		title();}, 299.9);
+
+		setTimeout(() => {
+			process.title += "  /";
+			title();
+		}, 299.9);
 	}, 299.9);
 };
 
 
 function print(x) {
 	i = x;
-		process.stdout.write(read[x].random);
-		process.title = "Logged " + i + " character(s)";
-	if (x < read.length - 1){
-		x+=1;
-		setTimeout(()=>{
+	process.stdout.write(read[x].random);
+	process.title = "Logged " + i + " character(s)";
+	if (x < read.length - 1) {
+		x += 1;
+		setTimeout(() => {
 			print(x);
-		},20);
-	}else{
-	  console.log("\n\n\n\nexit in t-5 sec.".random)
-	  setTimeout(()=>{
-	    process.exit()
-		},5000);
+		}, 5);
+	} else {
+		console.log("\n\n\n>> Restarting in t-0s.".black.bgGreen)
+		setTimeout(() => {
+			console.clear();
+			print(0)
+		}, 0);
 	}
 }
 console.log(`>There are ${read.length} Characters in this piece of code (Inclusing WhiteSpace Chrs)\n\n`);
